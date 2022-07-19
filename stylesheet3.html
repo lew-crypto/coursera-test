@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>stylesheet3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="this is to a simplified web page built to show how to make different styles for the same web page">
+        <meta name="author" content="lewi" >
+        <meta name="keywords" content="">
+        <style>
+            * {
+                box-sizing: border-box;
+                /* line-height: 1.5; */
+            }
+            body {
+                margin: 0;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                padding: 35px;
+                background: #f1f1f1;
+            }
+            h2, h3 {
+                color: #44c94b;
+            }
+            div#wrapper {
+                width: 100%;
+                padding: 30px;
+                background: white;
+            }
+            div#top {
+                line-height: 0;
+            }
+            div#top h1 {
+                color: #44c94b;
+                font-size:  52px;
+                /* line-height: 1.0; */
+            }
+            div#top p {
+                font-size: 20px;
+                line-height: 1.7;
+            }
+            nav {
+                width: 100%;
+                padding: 5px 0px;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+
+            }
+
+            ul li  {
+                display: inline-block;
+            }
+            li a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                padding: 7px 35px;
+                text-align: center;
+                font-size: 17px;
+                margin-right: 10px;
+                background: #444;
+            }
+            li a#active {
+                background: #44c94b;
+                color: white;
+            }
+            main {
+                width: 100%;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+            section a {
+                color: black;
+            }
+            section a:hover {
+                color: #44c94b;
+            }
+            aside {
+                background: #f1f1f1;
+                padding: 12px 15px;
+            }
+
+            footer {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            @media screen and (max-width: 1043px) {
+
+                ul li a {
+                    margin-bottom: 15px;
+                }
+            }
+
+            @media screen and (max-width: 803px) {
+                div#top {
+                    border: 1px solid black;
+                    line-height: 1.0;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="top">
+                <h1>Welcome to my home page</h1>
+                <p>use the menu to select different stylesheets</p>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="stylesheet1.html" >Stylesheet 1</a></li>
+                    <li><a href="stylesheet2.html" >Stylesheet 2</a></li>
+                    <li><a href="stylesheet3.html" id="active">Stylesheet 3</a></li>
+                    <li><a href="stylesheet4.html">Stylesheet 4</a></li>
+                    <li><a href="nostyle.html">No Stylesheet </a></li>
+                </ul>
+            </nav>
+            <main>
+                    <section id="first">
+                        <h2>Same Page Different Stylesheets</h2>
+                        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+                        <a href="stylesheet1.html">styesheet1</a>, 
+                        <a href="stylesheet2.html">stylesheet2</a>, 
+                        <a href="stylesheet3.html">stylesheet3</a>, 
+                        <a href="stylesheet4.html">stylesheet4</a></p>
+                    </section>
+              
+               
+                <section id="second">
+                    <h2>No Styles</h2>
+                    <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page oooks like with no stylesheet:<br>
+                        <a href="nostyle.html">No Stylesheet</a>
+                    </p>
+                </section>
+        
+                <aside>
+                    <h3>Side-Bar</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </aside>
+            </main> 
+            <footer>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            </footer>
+        </div>
+    </body>
+</html>

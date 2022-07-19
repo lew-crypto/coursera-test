@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>my first page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="lewi">
+    <meta name="keywords" content="html, css">
+    <meta name="description" content="this is a simple webpage developed to illustrate the html and css functions">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 25px;
+            background: #f1f1f1;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        div#wrapper {
+            overflow: auto;
+            width: 100%;
+            background: white;
+            margin: auto;
+            padding: 25px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            padding: 0;
+            margin: 0;
+        }
+        div#top{
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            padding: 25px 0px 10px 25px;
+            line-height: 15px;
+            font-size: 18px;
+
+        }
+
+        nav {
+            width: 155px;
+            float: left;
+            margin: 10px 0px 0px 0px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 5px 5px 5px 0px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #d7d7d7;
+        }
+        nav ul li a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 5px 5px 5px 5px;
+            background: #f2f2f2;
+        }
+        nav ul li a:hover {
+            background: white;
+        }
+        nav ul a#active {
+            background: #4CAF50;
+            color: white;
+        }
+        main {
+            width: 65%;
+             float: left;
+            padding: 40px 0px 35px 45px;
+            font-size: 18px;
+            text-align: justify-content;  
+            word-break: break-all;   
+        }
+        main a {
+            color: black
+        }
+        section#first, section#second {
+            width: 100%;
+        }
+        aside {
+            background: #32a4e7;
+            padding: 15px;
+            float: right;
+            width: 200px;;
+            height: 400px;
+            margin: 10px 0px 10px 0px;;
+        }
+        footer {
+            width: 100%;
+            clear:right;
+            background: #d8d8d8;
+            font-size: 13px;
+            padding: 5px 10px;
+        }
+
+        @media screen and (max-width: 1150px) {
+            main {
+                width: 60%;
+            }
+            aside {
+                width: 20%;
+            }
+        }
+        @media screen and (max-width: 950px) {
+            main {
+                width: 78%;
+
+            }
+            aside  {
+                clear: left;
+                width: 100%;
+                height: auto;
+
+            }
+           
+        }
+
+        @media screen and (max-width: 830px) {
+            nav {
+                width: 100%;
+            }
+            main {
+                clear: left;
+                width: 100%;
+                padding: 20px 0px;
+
+            }
+        }
+
+        @media screen and (max-width: 588px) {
+            div#top {
+                line-height: 35px;
+            }
+            div#top p {
+                line-height: 7px;;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <div id="top">
+        <h1>Welcome to my homepage</h1>
+        <p>use the menu to select different stylesheets</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="stylesheet1.html" id="active">Stylesheet 1</a></li>
+            <li><a href="stylesheet2.html">Stylesheet 2</a></li>
+            <li><a href="stylesheet3.html">Stylesheet 3</a></li>
+            <li><a href="stylesheet4.html">Stylesheet 4</a></li>
+            <li><a href="nostyle.html">No Stylesheet </a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <section id="first">
+            <h2>Same Page Different Stylesheets</h2>
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+            <a href="stylesheet1.html">styesheet1</a>
+            <a href="stylesheet2.html">stylesheet2</a>
+            <a href="stylsheet3.html">stylesheet3</a>
+            <a href="stylesheet4.html">stylesheet4</a></p>
+
+        </section>
+        <section id="second">
+            <h2>No Styles</h2>
+            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page oooks like with no stylesheet:<br>
+                <a href="nostyle.html">No Stylesheet</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <aside>
+        <h3>Side-Bar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </aside>
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    </footer>
+</div>
+</body>
+</html>

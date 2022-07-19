@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second stylesheet</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 45px;
+            background: #f1f1f1;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+         h2, h3, h4, h5, h6 {
+            color: #d14836;
+            font-size: 30px;
+            font-weight: bold;;
+        }
+        div#wrapper {
+            background: #d14836;;
+            padding: 0px 20px;
+        }
+        div#top {
+            font-size: 37px;
+            line-height: 30px;
+            color: white;
+            padding: 0px 0px 0px 2%;
+            overflow: auto;
+        }
+        main {
+            width: 100%;
+            overflow: auto;
+            background: white;            
+        }
+        section {
+           width: 68%;float: left;
+           padding: 0px 10px 0px 20px;
+        }
+        section#second {
+            padding-top: 0px;
+        }
+        section a {
+            color: #d14836;
+            text-decoration: none;
+        }
+        ul {
+            float: right;
+            list-style-type: none;
+            padding: 25px 25px 0px 0px;
+            margin: 0;
+            width: 290px;;
+        }
+        
+        li a {
+            display: block;
+            text-decoration: none;
+            background: #d14836;
+            margin-bottom: 12px;
+            color: white;
+            padding: 8px 40px;
+            font-size: 18px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;;
+            border: 2px solid #d14836
+        }
+         li  a#active {
+            background: white;
+            color: #d14836;
+            border:2px solid  #d14836;
+        }
+        aside {
+            clear: left;
+            background: #F6DAD7;
+            padding: 10px 15px 30px 15px;
+            line-height: 1.3;
+
+            
+        }
+        footer {
+            font-size: 13px;color: white;
+            padding: 10px 10px 80px 10px;
+            line-height: 20px;
+        }
+        li a:hover {
+            background: white;
+            color: #d14836;
+        }
+        section a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 1079px) {
+            
+            div#top h1 {
+                line-height: 1.0;
+            }
+            div#top p {
+                line-height: 1.2;
+            }
+            section {
+                width: 65%;
+            }
+            section p {
+                line-height: 1.5;
+
+            }
+        }
+        @media screen and (max-width: 1054px) {
+           
+            section#first {
+                width: 62%;
+            }
+            section#second {
+                width: 95%;
+            }
+
+        }
+       
+        @media screen and (max-width: 977px) {
+         
+            section#first{
+                width: 60%;
+            }
+        }
+        @media screen and (max-width: 890px) {
+      
+            section#first {
+                width: 57%;
+            }
+        }
+        @media screen and (max-width: 823px) {
+        
+            section#first {
+                 width: 55%; 
+            }
+            ul {
+                width: 45%;
+            }
+
+        }
+
+        @media screen and (max-width: 750px) {
+
+            section#first, section#second, ul {
+                width: 100%;
+            }
+            ul {
+                padding-left: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div id="top">
+            <h1>Welcome to my home page</h1>
+            <p>use the menu to select different stylesheets</p>
+        </div>
+        <main>
+                <section id="first">
+                    <h2>Same Page Different Stylesheets</h2>
+                    <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+                    <a href="stylesheet1.html">styesheet1</a>, 
+                    <a href="stylesheet2.html">stylesheet2</a>, 
+                    <a href="stylsheet3.html">stylesheet3</a>, 
+                    <a href="stylesheet4.html">stylesheet4</a></p>
+                </section>
+          
+            <ul>
+                <li><a href="stylesheet1.html" >Stylesheet 1</a></li>
+                <li><a href="stylesheet2.html" id="active">Stylesheet 2</a></li>
+                <li><a href="stylesheet3.html">Stylesheet 3</a></li>
+                <li><a href="stylesheet4.html">Stylesheet 4</a></li>
+                <li><a href="nostyle.html">No Stylesheet </a></li>
+            </ul>
+            <section id="second">
+                <h2>No Styles</h2>
+                <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page oooks like with no stylesheet:<br>
+                    <a href="nostyle.html">No Stylesheet</a>
+                </p>
+            </section>
+    
+            <aside>
+                <h3>Side-Bar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </aside>
+        </main> 
+        <footer>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        </footer>
+    </div>
+</body>
+</html>
